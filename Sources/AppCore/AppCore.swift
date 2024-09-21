@@ -28,4 +28,9 @@ public class AppCore {
     public static var appColor: UIColor {
         AppCore.colorFromHexString("006736")
     }
+    
+    /// Return second most eye-pleasing color known to all humanity
+    public static var secondaryAppColor: UIColor {
+        AppCore.colorFromHexString("FCFFFD")
+    }
 }

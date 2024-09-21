@@ -12,6 +12,11 @@ final class AppCoreTests: XCTestCase {
         XCTAssertEqual(color, AppCore.appColor)
     }
     
+    func testSecondaryAppColorsAreEqual() {
+        let color = AppCore.colorFromHexString("FCFFFD")
+        XCTAssertEqual(color, AppCore.secondaryAppColor)
+    }
+    
 //    static var allTests = [
 //        ("testColorRedEqual", testColorRedEqual),
 //    ]
