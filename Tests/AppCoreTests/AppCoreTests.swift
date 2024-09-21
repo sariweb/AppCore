@@ -7,7 +7,12 @@ final class AppCoreTests: XCTestCase {
         XCTAssertEqual(color, .red)
     }
     
-    static var allTests = [
-        ("testColorRedEqual", testColorRedEqual),
-    ]
+    func testAppColorsAreEqual() {
+        let color = AppCore.colorFromHexString("006736")
+        XCTAssertEqual(color, AppCore.appColor)
+    }
+    
+//    static var allTests = [
+//        ("testColorRedEqual", testColorRedEqual),
+//    ]
 }
